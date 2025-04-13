@@ -1,7 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
-import Collection from '../src/pages/Collection'
 import About from '../src/pages/About'
 import Contact from '../src/pages/Contact'
 import Product from '../src/pages/Product'
@@ -11,6 +10,7 @@ import Placeorder from '../src/pages/Placeorder'
 import Orders from '../src/pages/Orders'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Products from './pages/Products';
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/collection' element={<Collection />} />
+        <Route path='/products' element={<Products />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/product/:productId' element={<Product />} />
